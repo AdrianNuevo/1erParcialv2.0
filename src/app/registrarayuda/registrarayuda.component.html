@@ -1,0 +1,19 @@
+<h1>Registrar ayuda</h1>
+<form action="">
+    <div>
+        <label>Identificador de ayuda</label>
+        <input type="number" name="id" [(ngModel)]="ayuda.identificador">
+    </div>
+    <div>
+        <label>Tipo de ayuda</label>
+        <select [(ngModel)]="ayuda.tipo">
+            <option>Portatil</option>
+            <option>Tablet</option>
+            <option>Bicicleta</option>
+        </select>
+    </div>
+    <div>
+        <label>Existencia</label>
+        <input type="number" name="cantidad">
+    </div>
+</form>

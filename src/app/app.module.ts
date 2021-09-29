@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
+import { RegistrarayudaComponent } from './registrarayuda/registrarayuda.component';
+import { TablaayudaComponent } from './tablaayuda/tablaayuda.component';
+import { RegistrarpagoComponent } from './registrarpago/registrarpago.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    RegistrarayudaComponent,
+    TablaayudaComponent,
+    RegistrarpagoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
