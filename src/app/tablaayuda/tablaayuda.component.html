@@ -17,3 +17,17 @@
 </table>
 <br>
 <h2>Tabla de Estudiantes</h2>
+<table>
+    <thead>
+        <th>Identificacion</th>
+        <th>Nombre del estudiante</th>
+        <th>Tipo de ayuda</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pago of pagos">
+            <td>{{pago.identificacion}}</td>
+            <td>{{pago.nombre}}</td>
+            <td>{{pago.tipo}}</td>
+        </tr>
+    </tbody>
+</table>

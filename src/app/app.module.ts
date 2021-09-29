@@ -9,6 +9,7 @@ import { RegistrarayudaComponent } from './registrarayuda/registrarayuda.compone
 import { TablaayudaComponent } from './tablaayuda/tablaayuda.component';
 import { RegistrarpagoComponent } from './registrarpago/registrarpago.component';
 import { AyudaservicioService } from './ayudaservicio.service';
+import { PagoservicioService } from './pagoservicio.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { AyudaservicioService } from './ayudaservicio.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [AyudaservicioService],
+  providers: [AyudaservicioService, PagoservicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

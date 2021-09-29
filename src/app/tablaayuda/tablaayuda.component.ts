@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Ayuda } from '../ayuda';
 import { AyudaservicioService } from '../ayudaservicio.service';
+import { Pago } from '../pago';
+import { PagoservicioService } from '../pagoservicio.service';
 
 @Component({
   selector: 'app-tablaayuda',
@@ -10,13 +12,18 @@ import { AyudaservicioService } from '../ayudaservicio.service';
 export class TablaayudaComponent implements OnInit {
   ayudas!: Ayuda[];
   searchText!: string;
-  constructor(private ayudaservicio: AyudaservicioService) { }
+  pagos!: Pago[];
+  constructor(private ayudaservicio: AyudaservicioService, private pagoservicio: PagoservicioService) { }
 
   ngOnInit(): void {
     this.get();
+    this.obtener();
   }
   get(){
     this.ayudas = this.ayudaservicio.get();
+  }
+  obtener(){
+    this.pagos = this.pagoservicio.obtener();
   }
 
 }
