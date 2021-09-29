@@ -1,1 +1,19 @@
-<p>registrarpago works!</p>
+<h1>Registrar estudiante(pago)</h1>
+<form action="">
+    <div>
+        <label>Identificacion: </label>
+        <input type="number" [(ngModel)]="pago.identificacion">
+    </div>
+    <div>
+        <label>Nombre: </label>
+        <input type="string" [(ngModel)]="pago.nombre">
+    </div>
+    <div>
+        <label>Tipo de ayuda</label>
+        <select [(ngModel)]="pago.tipo">
+            <option>Portatil</option>
+            <option>Tablet</option>
+            <option>Bicicleta</option>
+        </select>
+    </div>
+</form>

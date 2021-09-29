@@ -16,6 +16,6 @@ export class AyudaservicioService {
       ayudas= this.get();
     }
     ayudas.push(ayuda);
-    localStorage.setItem('datos', JSON.stringify(ayudas));
+    localStorage.setItem('ayudas', JSON.stringify(ayudas));
   }
 }

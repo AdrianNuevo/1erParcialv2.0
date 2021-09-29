@@ -2,11 +2,11 @@
 <form action="">
     <div>
         <label>Identificador de ayuda</label>
-        <input type="number" name="id" [(ngModel)]="ayuda.identificador">
+        <input type="number" name="identificador" [(ngModel)]="ayuda.identificador">
     </div>
     <div>
         <label>Tipo de ayuda</label>
-        <select [(ngModel)]="ayuda.tipo">
+        <select name="tipo" [(ngModel)]="ayuda.tipo">
             <option>Portatil</option>
             <option>Tablet</option>
             <option>Bicicleta</option>
@@ -14,7 +14,7 @@
     </div>
     <div>
         <label>Existencia</label>
-        <input type="number" name="cantidad" [(ngModel)]="ayuda.cant">
+        <input type="number" name="cant" [(ngModel)]="ayuda.cant">
     </div>
     <button (click)= "agregar()">Registrar</button>
 </form>

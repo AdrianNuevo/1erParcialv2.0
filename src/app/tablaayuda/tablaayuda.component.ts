@@ -9,6 +9,7 @@ import { AyudaservicioService } from '../ayudaservicio.service';
 })
 export class TablaayudaComponent implements OnInit {
   ayudas!: Ayuda[];
+  searchText!: string;
   constructor(private ayudaservicio: AyudaservicioService) { }
 
   ngOnInit(): void {
