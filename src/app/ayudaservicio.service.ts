@@ -18,4 +18,16 @@ export class AyudaservicioService {
     ayudas.push(ayuda);
     localStorage.setItem('ayudas', JSON.stringify(ayudas));
   }
+  extraer(tipo: string){
+    let ayudas: Ayuda[]=[];
+    if(this.get()!=null){
+      ayudas=this.get();
+    }
+    var i=0;
+    while(ayudas[i].tipo!=tipo){
+      i++;
+    }
+    ayudas[i].cant--;
+    localStorage.setItem('ayudas', JSON.stringify(ayudas));
+  }
 }

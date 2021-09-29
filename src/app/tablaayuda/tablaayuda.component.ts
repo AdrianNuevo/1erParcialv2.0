@@ -11,7 +11,6 @@ import { PagoservicioService } from '../pagoservicio.service';
 })
 export class TablaayudaComponent implements OnInit {
   ayudas!: Ayuda[];
-  searchText!: string;
   pagos!: Pago[];
   constructor(private ayudaservicio: AyudaservicioService, private pagoservicio: PagoservicioService) { }
 

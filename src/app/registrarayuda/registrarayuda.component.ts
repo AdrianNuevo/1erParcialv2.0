@@ -17,9 +17,11 @@ export class RegistrarayudaComponent implements OnInit {
     this.ayuda= new Ayuda;
   }
   agregar(){
-    alert('Se agrego la ayuda');
-    this.ayudaservicio.post(this.ayuda);
-    
+    if(this.ayuda.identificador!=null && this.ayuda.tipo!=null && this.ayuda.cant!=null){
+      this.ayudaservicio.post(this.ayuda);
+    } else{
+    alert('HAY CAMPOS SIN LLENAR');  
+  }  
   }
 
 }
