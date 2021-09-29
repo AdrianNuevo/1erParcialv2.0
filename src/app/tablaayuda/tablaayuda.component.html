@@ -1,1 +1,18 @@
-<p>tablaayuda works!</p>
+<h1>Tabla de ayudas</h1>
+<br>
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Tipo</th>
+        <th>Existencia</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ayuda of ayudas">
+            <td>{{ayuda.identificador}}</td>
+            <td>{{ayuda.tipo}}</td>
+            <td>{{ayuda.cant}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h2>Tabla de Estudiantes</h2>

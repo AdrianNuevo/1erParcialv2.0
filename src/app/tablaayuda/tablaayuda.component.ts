@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Ayuda } from '../ayuda';
+import { AyudaservicioService } from '../ayudaservicio.service';
 
 @Component({
   selector: 'app-tablaayuda',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tablaayuda.component.css']
 })
 export class TablaayudaComponent implements OnInit {
-
-  constructor() { }
+  ayudas!: Ayuda[];
+  constructor(private ayudaservicio: AyudaservicioService) { }
 
   ngOnInit(): void {
+    this.get();
+  }
+  get(){
+    this.ayudas = this.ayudaservicio.get();
   }
 
 }

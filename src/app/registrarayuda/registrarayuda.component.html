@@ -14,6 +14,8 @@
     </div>
     <div>
         <label>Existencia</label>
-        <input type="number" name="cantidad">
+        <input type="number" name="cantidad" [(ngModel)]="ayuda.cant">
     </div>
+    <button (click)= "agregar()">Registrar</button>
 </form>
+<app-registrarpago></app-registrarpago>

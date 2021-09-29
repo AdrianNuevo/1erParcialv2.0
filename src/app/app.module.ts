@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { RegistrarayudaComponent } from './registrarayuda/registrarayuda.component';
 import { TablaayudaComponent } from './tablaayuda/tablaayuda.component';
 import { RegistrarpagoComponent } from './registrarpago/registrarpago.component';
+import { AyudaservicioService } from './ayudaservicio.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { RegistrarpagoComponent } from './registrarpago/registrarpago.component'
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AyudaservicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
