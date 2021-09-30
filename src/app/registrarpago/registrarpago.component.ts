@@ -35,7 +35,7 @@ export class RegistrarpagoComponent implements OnInit {
         this.pagoservicio.poner(this.pago);
       }
       else{
-        alert('Ya recibio ayuda')
+        alert('YA RECIBIO AYUDA');
       }
     }
     else{

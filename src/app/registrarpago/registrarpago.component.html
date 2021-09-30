@@ -4,17 +4,20 @@
         <label>Identificacion: </label>
         <input type="number" [(ngModel)]="pago.identificacion">
     </div>
+    <br>
     <div>
         <label>Nombre: </label>
         <input type="string" [(ngModel)]="pago.nombre">
     </div>
+    <br>
     <div>
-        <label>Tipo de ayuda</label>
-        <select [(ngModel)]="pago.tipo">
+        <label>Tipo de ayuda: </label>
+        <select [(ngModel)]="pago.tipo" >
             <option>Portatil</option>
             <option>Tablet</option>
             <option>Bicicleta</option>
         </select>
     </div>
+    <br>
     <button (click)="add()">Agregar</button>
 </form>

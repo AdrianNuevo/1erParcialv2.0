@@ -1,0 +1,22 @@
+tr{
+    text-align: center;
+    height: 40px;
+    vertical-align: center;
+    
+}
+tr:hover{
+    background-color: rgb(155, 68, 68);
+    color: white;
+}
+th{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+table{
+    width: 100%;
+    border-radius: 30px;
+}
+thead{
+    background-color: rgb(155, 68, 68);
+    color: white;
+    font-family: cursive;
+}
